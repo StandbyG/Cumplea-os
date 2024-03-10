@@ -1,0 +1,15 @@
+
+.transicion {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    transition: all 1s;
+}
+.ocultarTransicion {
+    opacity: 0;
+}
+.quitarTransicion {
+    display: none;
+}

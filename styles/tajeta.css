@@ -1,0 +1,154 @@
+:root {
+  --fondo: #ffc0cb;
+}
+
+h3,
+h2 {
+  font-family: loboster;
+}
+.caja-tarjeta-page {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--fondo);
+}
+.body-tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.tarjetaFelizCumple {
+  position: relative;
+  width: 350px;
+  height: 450px;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  transition: 0.4s;
+}
+.tarjetaFelizCumple:hover {
+  transform: perspective(2500px) rotate(5deg);
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.15),
+    0 10px 100px rgba(0, 0, 0, 0.3);
+}
+.tarjetaFelizCumple:hover .tarjeta-frente {
+  transform: rotateY(-160deg);
+}
+.tarjetaFelizCumple:hover .frente-texto {
+  display: none;
+}
+.tarjeta-frente {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 450px;
+  overflow: hidden;
+  transform-origin: left;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.13),
+    30px 0 50px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+}
+.felUno {
+  font-size: 30px;
+}
+.cumpleUno {
+  font-size: 40px;
+}
+.caja-img-pastel-Dino {
+  width: 300px;
+  height: 300px;
+}
+.limit-img-pastel-Dino {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.limit-img-pastel-Dino img {
+  width: 100%;
+  height: 100%;
+}
+.tarjetaInside {
+  position: absolute;
+  background-color: #fff;
+  width: 350px;
+  height: 450px;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.tarjetaInside .ati {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.tarjetaInside p {
+  font-size: 13px;
+  font-family: loboster;
+}
+.feliz,
+.cumple {
+  position: relative;
+  text-align: center;
+  backface-visibility: hidden;
+  font-size: 30px;
+}
+.feliz {
+  bottom: 23px;
+  left: 110px;
+}
+.cumple {
+  position: relative;
+  font-size: 35px;
+  text-align: center;
+  top: 15px;
+}
+.nombre {
+  font-family: retro signature;
+  font-weight: 800;
+  font-size: 25px;
+  margin-top: 11px;
+}
+.caja-imagenes-dentro-de-carta {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.caja-imagenes-dentro-de-carta img {
+  width: 50%;
+  height: 100%;
+}
+.ramo-de-flores-span span img {
+  width: 27px;
+  height: 27px;
+  transform: rotate(30deg);
+}
+.caja-background-regalos {
+}
+@media only screen and (max-width: 767px) {
+  .tarjetaFelizCumple {
+    transform: scale(0.9);
+  }
+
+  .caja-background-regalos {
+    background: url(img/regalo-de-cumpleanos.png);
+    background-size: contain;
+    background-position: center;
+    width: 130%;
+    height: 150%;
+    position: absolute;
+    top: 30%;
+    z-index: -1;
+    filter: blur(3px);
+  }
+}

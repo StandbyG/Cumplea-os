@@ -1,9 +1,9 @@
 let paginaCarta = "carta.html";
 let botonTraerPaginaCarta = document.querySelector(".botonTraerPagina");
 let transicion = document.querySelector(".transicion");
-let soundMananitas = new Audio("/audio/taylor.mp3");
+let soundMananitas = new Audio("./audio/taylor.mp3");
 let soundEfecto = new Audio("./audio/sonidoClick.mp3");
-let soundAmbiente = new Audio("/audio/taylor.mp3");
+let soundAmbiente = new Audio("./audio/taylor.mp3");
 let sondEfectoConfetti = new Audio("./audio/efectoConfetti.mp3");
 
 onload = () => {
